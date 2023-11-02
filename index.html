@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sign In & Sign Up Page | Arvin Paolo Diaz</title>
+		<!-- External CSS -->
+		<link rel="stylesheet" type="text/css" href="./index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<header>Login | Register</header>
+		<main>
+			<section class="container signin">
+				<form>
+					<div class="input">
+						<input type="text" required autocomplete id="signin-user">
+						<label for="signin-user">Username or Email</label>
+					</div>
+					<div class="input">
+						<input type="password" required id="signin-pass">
+						<label for="signin-pass">Password</label>
+					</div>					
+
+					<a href="#">Forgot your password?</a>
+
+					<input type="submit" value="Login" id="login-btn">
+				</form>
+				<p>Don't have an account? Register <a href="#">here</a>.</p>
+				<p>or sign in using:</p>
+				<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+			</section>
+			<section class="container signup">
+				<form>
+					<div class="input">
+						<input type="text" required autocomplete id="signup-name">
+						<label for="signup-name">Name</label>
+					</div>
+					<div class="input">
+						<input type="text" id="signup-username" required autocomplete>
+						<label for="signup-username">Username</label>
+					</div>
+					<div class="input">
+						<input type="email" id="signup-email" required autocomplete>
+						<label for="signup-email">E-mail</label>
+					</div>
+					<div class="input">
+						<input type="password" id="signup-pass" required>
+						<label for="signup-pass">Password</label>
+					</div>
+					<div class="input">
+						<input type="password" id="signup-pass-confirm" required>
+						<label for="signup-pass-confirm">Confirm Password</label>
+					</div>
+					<div>
+						<input type="checkbox" id="signup-terms-and-conditions">
+					<label for="signup-terms-and-conditions">I have read the <a href="#">Terms & Conditions</a></label>
+					</div>
+					
+
+					<input type="submit" id="register-btn" value="Register">
+				</form>
+				<p>Already have an account? Login <a href="#">here</a>.</p>
+				<p>or sign in using:</p>
+				<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+				<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+			</section>
+		</main>
+
+
+
+
+		<!-- External JS -->
+		<script type="text/javascript" src="./index.js"></script>
+	</body>
+</html>
