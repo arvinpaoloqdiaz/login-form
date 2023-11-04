@@ -7,6 +7,10 @@
 		<!-- External CSS -->
 		<link rel="stylesheet" type="text/css" href="./index.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;500;700;900&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>Login | Register</header>
@@ -22,16 +26,23 @@
 						<label for="signin-pass">Password</label>
 					</div>					
 
-					<a href="#">Forgot your password?</a>
+					<a id="forgot-pass" href="#">Forgot your password?</a>
 
-					<input type="submit" value="Login" id="login-btn">
+					<input type="submit" value="Login" id="login-btn" class="button">
 				</form>
-				<p>Don't have an account? Register <a href="#">here</a>.</p>
-				<p>or sign in using:</p>
-				<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+				<p>Don't have an account?  <a href="#">Register here</a>.</p>
+				<div class="divider">
+					<hr class = "inline-hr">
+					<p>or sign in using:</p>
+					<hr class = "inline-hr">
+				</div>
+				<div class="socials">
+					<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+				</div>
+				
 			</section>
 			<section class="container signup">
 				<form>
@@ -55,20 +66,26 @@
 						<input type="password" id="signup-pass-confirm" required>
 						<label for="signup-pass-confirm">Confirm Password</label>
 					</div>
-					<div>
-						<input type="checkbox" id="signup-terms-and-conditions">
-					<label for="signup-terms-and-conditions">I have read the <a href="#">Terms & Conditions</a></label>
+					<div class="termsconditions">
+						<input type="checkbox" id="signup-terms-and-conditions" class="custom-checkbox">
+						<label for="signup-terms-and-conditions">I have read the <a href="#">Terms & Conditions</a></label>
 					</div>
 					
 
-					<input type="submit" id="register-btn" value="Register">
+					<input type="submit" id="register-btn" value="Register" class="button">
 				</form>
-				<p>Already have an account? Login <a href="#">here</a>.</p>
-				<p>or sign in using:</p>
-				<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
-				<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+				<p>Already have an account?  <a href="#">Login here</a>.</p>
+				<div class="divider">
+					<hr class = "inline-hr">
+					<p>or sign in using:</p>
+					<hr class = "inline-hr">
+				</div>
+				<div class="socials">
+					<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+					<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+				</div>
 			</section>
 		</main>
 
