@@ -13,38 +13,46 @@
 		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;500;700;900&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header>Login | Register</header>
+		<header>
+			<label for="login-section"><p class="enlarge-left" id="log">Login</p></label>
+			|
+			<label for="register-section"><p class="blur" id="reg">Register</p></label>
+		</header>
+		<div class="rad">
+			<input type="radio" name="select-section" id="login-section" checked>
+			<input type="radio" name="select-section" id="register-section">
+		</div>
 		<main>
-			<section class="container signin">
-				<form>
-					<div class="input">
-						<input type="text" required autocomplete id="signin-user">
-						<label for="signin-user">Username or Email</label>
+			<section class="container signin select-animation ">
+					<form>
+						<div class="input">
+							<input type="text" required autocomplete id="signin-user">
+							<label for="signin-user">Username or Email</label>
+						</div>
+						<div class="input">
+							<input type="password" required id="signin-pass">
+							<label for="signin-pass">Password</label>
+						</div>					
+
+						<a id="forgot-pass" href="#">Forgot your password?</a>
+
+						<input type="submit" value="Login" id="login-btn" class="button">
+					</form>
+					<p>Don't have an account?  <a href="#" id="register-link">Register here</a>.</p>
+					<div class="divider">
+						<hr class = "inline-hr">
+						<p>or sign in using:</p>
+						<hr class = "inline-hr">
 					</div>
-					<div class="input">
-						<input type="password" required id="signin-pass">
-						<label for="signin-pass">Password</label>
-					</div>					
-
-					<a id="forgot-pass" href="#">Forgot your password?</a>
-
-					<input type="submit" value="Login" id="login-btn" class="button">
-				</form>
-				<p>Don't have an account?  <a href="#">Register here</a>.</p>
-				<div class="divider">
-					<hr class = "inline-hr">
-					<p>or sign in using:</p>
-					<hr class = "inline-hr">
-				</div>
-				<div class="socials">
-					<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
-					<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
-					<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
-					<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
-				</div>
+					<div class="socials">
+						<span><a href="#"><i class="fa-brands fa-square-facebook"></i></a></span>
+						<span><a href="#"><i class="fa-brands fa-square-google-plus"></i></a></span>
+						<span><a href="#"><i class="fa-brands fa-square-github"></i></a></span>
+						<span><a href="#"><i class="fa-brands fa-linkedin"></i></a></span>
+					</div>
 				
 			</section>
-			<section class="container signup">
+			<section class="container signup deselect-animation ">
 				<form>
 					<div class="input">
 						<input type="text" required autocomplete id="signup-name">
@@ -55,7 +63,7 @@
 						<label for="signup-username">Username</label>
 					</div>
 					<div class="input">
-						<input type="email" id="signup-email" required autocomplete>
+						<input type="text" id="signup-email" required autocomplete>
 						<label for="signup-email">E-mail</label>
 					</div>
 					<div class="input">
@@ -74,7 +82,7 @@
 
 					<input type="submit" id="register-btn" value="Register" class="button">
 				</form>
-				<p>Already have an account?  <a href="#">Login here</a>.</p>
+				<p>Already have an account?  <a href="#" id="login-link">Login here</a>.</p>
 				<div class="divider">
 					<hr class = "inline-hr">
 					<p>or sign in using:</p>
